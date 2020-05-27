@@ -33,6 +33,7 @@ describe("counter contract test suite", () => {
     before(async () => {
       await counterClient.deployContract();
     });
+    
     it("should start at zero", async () => {
       const counter = await getCounter();
       assert.equal(counter, 0);
